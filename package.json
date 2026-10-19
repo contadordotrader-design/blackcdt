@@ -1,0 +1,10 @@
+{
+  "name": "painel-black-2026",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Painel de resultados da Black 2026 · Contador do Trader",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" },
+  "dependencies": { "express": "^4.21.2", "pg": "^8.13.1" }
+}
