@@ -393,7 +393,7 @@
     const p = periodo();
     const g = c => soma(area.id, c, p.inicio, p.fim);
     if (area.id === PF) {
-      const pac = ['p01', 'p02', 'p03', 'p04'].map(id => [area.secoes[2].campos.find(c => c.id === id).nome, g(id)]);
+      const pac = area.secoes.find(s => s.nome === 'Vendas por pacote').campos.map(c => [c.nome, g(c.id)]);
       const tot = pac.reduce((t, x) => t + x[1], 0);
       return `<div class="card"><h3>Funil por frente</h3>${C.FRENTES_PF.map(f => `<p style="margin:10px 0 6px;color:var(--soft)"><b>${esc(f.nome)}</b></p>${funilHTML([
           ['Contatos', g(pfCampo(f.id, 'contatos'))], ['Respostas', g(pfCampo(f.id, 'respostas'))], ['Propostas', g(pfCampo(f.id, 'propostas'))], ['Vendas', g(pfCampo(f.id, 'vendas'))]])}`).join('')}</div>
