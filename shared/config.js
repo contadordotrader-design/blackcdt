@@ -120,10 +120,13 @@
           { id: 'leads_1h', nome: 'Respondidos em até 1h útil' },
         ] },
         { nome: 'Vendas por pacote', campos: [
-          { id: 'p01', nome: 'Pacote 01 · B3 ou Forex' },
-          { id: 'p02', nome: 'Pacote 02 · B3 + M.I.' },
-          { id: 'p03', nome: 'Pacote 03 · Cripto' },
-          { id: 'p04', nome: 'Pacote 04 · Personalizado' },
+          { id: 'pk_b3', nome: '01 · B3 (Day Trade)' },
+          { id: 'pk_b3_completo', nome: '02 · B3 Completo' },
+          { id: 'pk_forex', nome: '03 · Forex' },
+          { id: 'pk_mi', nome: '04 · Mercado Internacional' },
+          { id: 'pk_cripto', nome: '05 · Criptomoedas' },
+          { id: 'pk_personalizado', nome: '06 · Personalizado' },
+          { id: 'pk_mesa', nome: '07 · Mesa Proprietária' },
         ] },
         { nome: 'Recompra', campos: [
           { id: 'upgrades', nome: 'Upgrades de pacote' },
